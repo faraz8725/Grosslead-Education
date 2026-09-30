@@ -1,0 +1,737 @@
+/* =========================================================
+   EDUCATIONAL FOOTER — CLEAN MODERN VERSION
+========================================================= */
+
+.edu-footer {
+  width: 100%;
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 12% 15%,
+      rgba(226, 239, 250, 0.55),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7faff 100%
+    );
+
+  border-top: 1px solid #e5edf5;
+
+  color: #172033;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP ACCENT
+========================================================= */
+
+.edu-footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #1683e8,
+    #4da3f5,
+    #1683e8
+  );
+}
+
+
+/* =========================================================
+   MAIN FOOTER
+========================================================= */
+
+.edu-footer-inner {
+  width: min(1180px, 90%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(330px, 2.2fr)
+    minmax(150px, 1fr)
+    minmax(280px, 1.4fr);
+
+  column-gap: 70px;
+
+  padding: 58px 0 48px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.edu-footer-brand {
+  min-width: 0;
+
+  justify-self: start;
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.edu-footer-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  text-decoration: none;
+
+  color: #172033;
+
+  margin-bottom: 18px;
+
+  transition: transform 0.25s ease;
+}
+
+
+.edu-footer-logo:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LOGO IMAGE — FIXED
+========================================================= */
+
+.edu-footer-logo-image {
+  width: 48px;
+  height: 48px;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  flex-shrink: 0;
+
+  /*
+    White background ko visually blend karega.
+    Isse screenshot me dikh raha white square
+    almost disappear ho jayega.
+  */
+  mix-blend-mode: multiply;
+
+  /*
+    Logo ko thoda clean depth deta hai.
+  */
+  filter:
+    drop-shadow(
+      0 5px 10px rgba(22, 131, 232, 0.10)
+    );
+}
+
+
+/* =========================================================
+   EDUCATIONAL TEXT
+========================================================= */
+
+.edu-footer-logo > span {
+  font-size: 29px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+
+  line-height: 1;
+
+  color: #172033;
+}
+
+
+/* =========================================================
+   BRAND DESCRIPTION
+========================================================= */
+
+.edu-footer-brand p {
+  margin: 0;
+
+  max-width: 360px;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   EXPLORE COLUMN
+========================================================= */
+
+.edu-footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+.edu-footer-column h4,
+.edu-footer-contact h4 {
+  position: relative;
+
+  margin: 2px 0 22px;
+
+  padding-bottom: 9px;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15px;
+
+  color: #172033;
+}
+
+
+/* Heading underline */
+
+.edu-footer-column h4::after,
+.edu-footer-contact h4::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 26px;
+  height: 3px;
+
+  border-radius: 10px;
+
+  background: #1683e8;
+}
+
+
+/* =========================================================
+   EXPLORE LINKS
+========================================================= */
+
+.edu-footer-column a {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  color: #64748b;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.edu-footer-column a:hover {
+  color: #1683e8;
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.edu-footer-contact {
+  min-width: 0;
+
+  justify-self: end;
+
+  width: 100%;
+
+  max-width: 330px;
+
+  box-sizing: border-box;
+
+  padding: 22px 23px 23px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  border: 1px solid #e4edf6;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px rgba(30, 75, 115, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.edu-footer-contact:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 16px 36px rgba(30, 75, 115, 0.10);
+}
+
+
+/* =========================================================
+   CONTACT HEADING
+========================================================= */
+
+.edu-footer-contact h4 {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.edu-footer-email {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  padding: 10px 11px;
+
+  box-sizing: border-box;
+
+  color: #64748b;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  background: #f7faff;
+
+  border: 1px solid #e4edf6;
+
+  border-radius: 10px;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.edu-footer-email:hover {
+  color: #1683e8;
+
+  background: #eef7ff;
+
+  border-color: #cfe5fa;
+}
+
+
+/* =========================================================
+   EMAIL ICON
+========================================================= */
+
+.email-icon {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: linear-gradient(
+    135deg,
+    #1683e8,
+    #0e70ca
+  );
+
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  box-shadow:
+    0 5px 12px rgba(22, 131, 232, 0.18);
+}
+
+
+/* =========================================================
+   CONTACT DIVIDER
+========================================================= */
+
+.contact-divider {
+  width: 100%;
+
+  height: 1px;
+
+  background: #e7edf4;
+
+  margin: 18px 0 0;
+}
+
+
+/* =========================================================
+   BOTTOM FOOTER
+========================================================= */
+
+.edu-footer-bottom {
+  width: min(1180px, 90%);
+
+  margin: 0 auto;
+
+  padding: 17px 0 20px;
+
+  border-top: 1px solid #e4ebf3;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.edu-footer-bottom p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 12.5px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   BOTTOM LINKS
+========================================================= */
+
+.edu-footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.edu-footer-bottom-links a {
+  color: #94a3b8;
+
+  text-decoration: none;
+
+  font-size: 12.5px;
+
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+
+.edu-footer-bottom-links a:hover {
+  color: #1683e8;
+}
+
+
+.edu-footer-bottom-links span {
+  color: #cbd5e1;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .edu-footer-inner {
+    width: 90%;
+
+    grid-template-columns:
+      1.7fr
+      1fr
+      1.2fr;
+
+    column-gap: 40px;
+
+    padding: 50px 0 43px;
+  }
+
+
+  .edu-footer-contact {
+    justify-self: stretch;
+
+    max-width: none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .edu-footer-inner {
+    width: 88%;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 26px;
+
+    row-gap: 36px;
+
+    padding: 42px 0 36px;
+  }
+
+
+  /* ---------------- BRAND ---------------- */
+
+  .edu-footer-brand {
+    grid-column: 1 / -1;
+
+    justify-self: start;
+  }
+
+
+  /* ---------------- LOGO ---------------- */
+
+  .edu-footer-logo {
+    gap: 10px;
+
+    margin-bottom: 14px;
+  }
+
+
+  .edu-footer-logo-image {
+    width: 44px;
+    height: 44px;
+  }
+
+
+  .edu-footer-logo > span {
+    font-size: 26px;
+
+    letter-spacing: -0.6px;
+  }
+
+
+  /* ---------------- DESCRIPTION ---------------- */
+
+  .edu-footer-brand p {
+    max-width: 330px;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+
+  /* ---------------- COLUMNS ---------------- */
+
+  .edu-footer-column h4,
+  .edu-footer-contact h4 {
+    font-size: 14px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .edu-footer-column a {
+    font-size: 13px;
+
+    margin-bottom: 11px;
+  }
+
+
+  /* ---------------- CONTACT ---------------- */
+
+  .edu-footer-contact {
+    grid-column: 1 / -1;
+
+    justify-self: stretch;
+
+    width: 100%;
+
+    max-width: none;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+  }
+
+
+  .edu-footer-email {
+    font-size: 13px;
+
+    white-space: normal;
+  }
+
+
+  .contact-divider {
+    margin-top: 17px;
+  }
+
+
+  /* ---------------- BOTTOM ---------------- */
+
+  .edu-footer-bottom {
+    width: 88%;
+
+    padding: 15px 0 18px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+
+  .edu-footer-bottom p {
+    font-size: 11.5px;
+  }
+
+
+  .edu-footer-bottom-links a {
+    font-size: 11.5px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .edu-footer-inner {
+    width: 88%;
+
+    grid-template-columns: 1fr;
+
+    row-gap: 30px;
+
+    padding: 38px 0 32px;
+  }
+
+
+  .edu-footer-brand {
+    grid-column: auto;
+  }
+
+
+  .edu-footer-logo-image {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .edu-footer-logo > span {
+    font-size: 24px;
+  }
+
+
+  .edu-footer-brand p {
+    font-size: 12.5px;
+  }
+
+
+  .edu-footer-column h4,
+  .edu-footer-contact h4 {
+    font-size: 14px;
+  }
+
+
+  .edu-footer-contact {
+    grid-column: auto;
+
+    padding: 18px;
+  }
+
+
+  .edu-footer-bottom {
+    width: 88%;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 340px) {
+
+  .edu-footer-logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .edu-footer-logo > span {
+    font-size: 22px;
+  }
+
+
+  .edu-footer-brand p {
+    font-size: 12px;
+  }
+
+
+  .edu-footer-email {
+    font-size: 12px;
+  }
+
+}
